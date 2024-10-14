@@ -27,7 +27,7 @@ Generador de paletas de colores dinámico que permite seleccion un color base y 
 Este proyecto ilustra un enfoque práctico para la creación de herramientas de diseño accesibles, buscando facilitar el trabajo creativo al ofrecer una forma sencilla de explorar combinaciones de colores.
 
 
-### 🚀 Tecnologías Utilizadas 
+## 🚀 Tecnologías Utilizadas 
 
 - **React**: Para construir la interfaz de usuario de forma eficiente y reactiva.
 - **Vite**: Como herramienta de construcción y servidor de desarrollo, permitiendo un tiempo de carga rápido y una experiencia de desarrollo optimizada.
