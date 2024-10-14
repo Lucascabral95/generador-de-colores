@@ -107,7 +107,7 @@ const App = () => {
         <p className="texto-footer">
           Designed and handcrafted by <a className='link-redes' style={{ color: baseColor }} href="https://github.com/Lucascabral95" target="_blank" rel="noreferrer">Lucas Cabral</a> 🚀🚀🚀👩‍💻
         </p>
-      </footer>
+      </footer> 
     </div>
   );
 }; 
