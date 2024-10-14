@@ -68,6 +68,18 @@ footer {
                     }
                 }
 
+                .input-type-color {
+                    appearance: none;
+                    border-radius: 50%;
+                    width: 40px;
+                    border: none;
+                    height: 40px;
+                    cursor: pointer;
+                    padding: 0;
+                    transition: border-color 0.3s ease;
+                    background-color: transparent;
+                }
+
                 .cont-select {
                     border: none;
                     padding: 0;
@@ -85,6 +97,36 @@ footer {
                     &:focus {
                         outline: none;
                     }
+                }
+            }
+        }
+
+        .error-error {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .texto-error {
+                width: 100%;
+
+                .error {
+                    text-align: center;
+                    color: red;
+                    font-weight: 600;
+                }
+            }
+
+            .imagen {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .imagen-error {
+                    min-width: 400px;
+                    width: 60%;
+                    height: auto;
                 }
             }
         }
@@ -117,8 +159,10 @@ footer {
             font-weight: bolder;
             font-size: 14px;
             color: black;
+            text-align: center;
 
             .link-redes {
+                text-align: center;
                 text-decoration: none;
                 font-weight: bolder;
                 font-size: 14px;
@@ -138,26 +182,24 @@ footer {
             max-width: auto;
             width: 90%;
 
-            .titulo{
-                .titulo-del-proyecto{
+            .titulo {
+                .titulo-del-proyecto {
                     // font-size: 25.6px;
                 }
             }
-            
-            .subtitulo{
-                .subtulo-del-proyecto{
+
+            .subtitulo {
+                .subtulo-del-proyecto {
                     // font-size: 16.64px;
                 }
             }
 
-            .entrada{
-                .cont-input-text{
-                    
-                }
+            .entrada {
+                .cont-input-text {}
             }
 
-            .array-de-colores{
-                .colores-filtrados{
+            .array-de-colores {
+                .colores-filtrados {
                     margin: 0 4px 12px 4px;
                     width: calc(32% - 8px);
                     height: 160px;
@@ -176,31 +218,45 @@ footer {
             max-width: auto;
             width: 90%;
 
-            .titulo{
-                .titulo-del-proyecto{
-                    font-size: 28px;
+            .titulo {
+                .titulo-del-proyecto {
+                    font-size: 25.6px;
                 }
             }
-            
-            .subtitulo{
-                .subtitulo-del-proyecto{
+
+            .subtitulo {
+                .subtitulo-del-proyecto {
                     font-size: 16.64px;
                 }
             }
 
-            .entrada{
-                .cont-input-text{
-                    
-                }
+            .entrada {
+                .cont-input-text {}
             }
 
-            .array-de-colores{
-                .colores-filtrados{
+            .array-de-colores {
+                .colores-filtrados {
                     margin: 0 0 12px 0;
                     width: 48%;
                     height: 160px;
                 }
             }
+
+            .error-error {
+    
+                .imagen {
+    
+                    .imagen-error {
+                        min-width: auto;
+                        width: 100%;
+                        padding: 0 4%;
+                    }
+                }
+            }
+        }
+
+        footer{
+            padding: 0 4%;
         }
     }
 }

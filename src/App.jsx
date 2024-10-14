@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import chroma from 'chroma-js';
+import toast, { Toaster } from 'react-hot-toast';
 
 const App = () => {
   const [baseColor, setBaseColor] = useState('violet');
@@ -17,6 +18,7 @@ const App = () => {
       setError('');
     } else {
       setError('Color inválido. Intente con otro color.');
+      setShades([]);
     }
   };
 
@@ -28,6 +30,11 @@ const App = () => {
   useEffect(() => {
     generateShades();
   }, [baseColor, quantity]);
+
+  const copiarColor = (color) => {
+    navigator.clipboard.writeText(color);
+    toast.success('Color copiado');
+  }
 
   return (
     <div className='contenedor-body'>
@@ -49,13 +56,21 @@ const App = () => {
               onChange={(e) => setBaseColor(e.target.value)}
               placeholder="#3498db"
             />
+            <input
+              className='input-type-color'
+              type="color"
+              value={baseColor}
+              name="color"
+              onChange={(e) => setBaseColor(e.target.value)}
+              placeholder="#3498db"
+            />
             <select
               name="quantity"
               onChange={(e) => setQuantity(Number(e.target.value))}
               value={quantity}
               className="cont-select"
-              id="quantity" 
-              >
+              id="quantity"
+            >
               <option value="12">12</option>
               <option value="18">18</option>
               <option value="24">24</option>
@@ -63,7 +78,16 @@ const App = () => {
             </select>
           </div>
 
-          {error && <p className="error">{error}</p>}
+          {error &&
+            <div className='error-error'>
+              <div className="texto-error">
+                <p className="error"> {error} </p>
+              </div>
+              <div className="imagen">
+                <img src="/img/error-generador-colores.gif" alt="Error 500" className='imagen-error' />
+              </div>
+            </div>
+          }
 
         </form>
 
@@ -73,10 +97,12 @@ const App = () => {
               key={index}
               className="colores-filtrados"
               style={{ backgroundColor: shade }}
-              onClick={() => handleShadeClick(shade)}
+              onClick={() => { handleShadeClick(shade), copiarColor(shade) }}
             />
           ))}
         </div>
+
+        <Toaster />
       </main>
       <footer>
         <p className="texto-footer">
