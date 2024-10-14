@@ -6,8 +6,8 @@ Instalar generador-de-colores con npm
 
 ```bash
   git clone https://github.com/Lucascabral95/generador-de-colores.git
-  npm install my-project
-  cd my-project
+  npm install generador-de-colores
+  cd generador-de-colores
 ```
  
 ## 🌟 Descripción
