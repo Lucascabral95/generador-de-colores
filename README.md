@@ -1,4 +1,4 @@
-# React + Vite
+# Generador de colores
 
 ## Instalación
 
@@ -25,3 +25,14 @@ Generador de paletas de colores dinámico que permite seleccion un color base y 
 ## 📄 Conclusión:
 
 Este proyecto ilustra un enfoque práctico para la creación de herramientas de diseño accesibles, buscando facilitar el trabajo creativo al ofrecer una forma sencilla de explorar combinaciones de colores.
+
+
+### 🚀 Tecnologías Utilizadas 
+
+- **React**: Para construir la interfaz de usuario de forma eficiente y reactiva.
+- **Vite**: Como herramienta de construcción y servidor de desarrollo, permitiendo un tiempo de carga rápido y una experiencia de desarrollo optimizada.
+- **SASS**: Para estilos y diseño responsivo, asegurando una buena experiencia en diferentes dispositivos.
+
+## 📬 Contacto
+
+Si tenés alguna pregunta o sugerencia, no dudes en contactarme a través de lucassimple@hotmail.com o https://github.com/Lucascabral95
