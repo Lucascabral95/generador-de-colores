@@ -60,7 +60,6 @@ const App = () => {
               className='input-type-color'
               type="color"
               value={baseColor}
-              name="color"
               onChange={(e) => setBaseColor(e.target.value)}
               placeholder="#3498db"
             />
