@@ -36,3 +36,8 @@ Este proyecto ilustra un enfoque práctico para la creación de herramientas de 
 ## 📬 Contacto
 
 Si tenés alguna pregunta o sugerencia, no dudes en contactarme a través de lucassimple@hotmail.com o https://github.com/Lucascabral95
+
+### Notas: 
+
+- Añadí secciones como **Tecnologías Utilizadas**, **Contribuciones**, **Licencia** y **Contacto** para hacer el README más completo.
+- Podés ajustar el contenido según tus necesidades y preferencias.
